@@ -8,23 +8,29 @@
   src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
   font-weight: 800;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body {
+  font-family: "figtree";
+  font-weight: 500;
 }
 
+@font-face {
+  font-family: "figtree";
+  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "figtree";
+  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+  font-weight: 800;
+}
 body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+html {
   margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
