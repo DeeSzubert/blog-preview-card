@@ -19,7 +19,7 @@ html {
 body {
   background-color: b.$primary;
   height: 100vh;
-  max-height: 100vh;
+  max-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@ section {
   max-width: 380px;
   border-radius: 20px;
   padding: 30px;
-  margin: 0 auto;
+
   align-items: flex-start;
   box-shadow: 10px 10px;
 }
