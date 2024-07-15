@@ -18,9 +18,10 @@ html {
 
 body {
   background-color: b.$primary;
-  // height: 100vh;
+  height: 100vh;
   max-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: b.$font-family;
