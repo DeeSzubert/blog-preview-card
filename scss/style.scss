@@ -1,18 +1,6 @@
 @use "./abstracts" as a;
 @use "./base" as b;
 
-@font-face {
-  font-family: "figtree";
-  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "figtree";
-  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
-  font-weight: 800;
-}
-
 body,
 html {
   margin: 0;
@@ -35,12 +23,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "figtree";
+  font-family: b.$font-family;
   font-weight: 500;
 }
 
 section {
-  @include a.neutrals(100);
+  @include a.neutrals(100%);
   border: 1px solid black;
   display: flex;
   flex-direction: column;

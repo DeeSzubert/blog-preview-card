@@ -1,16 +1,13 @@
 @font-face {
   font-family: "figtree";
-  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+  src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
   font-weight: 500;
 }
 
 @font-face {
   font-family: "figtree";
-  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+  src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
   font-weight: 800;
 }
 
-body {
-  font-family: "figtree";
-  font-weight: 500;
-}
+$font-family: "figtree";
