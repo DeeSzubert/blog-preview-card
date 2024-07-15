@@ -1,0 +1,113 @@
+@use "./abstracts" as a;
+@use "./base" as b;
+
+@font-face {
+  font-family: "figtree";
+  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "figtree";
+  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+  font-weight: 800;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  background-color: b.$primary;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "figtree";
+  font-weight: 500;
+}
+
+section {
+  @include a.neutrals(100);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 380px);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 1.4rem;
+  align-items: flex-start;
+  box-shadow: 10px 10px;
+}
+
+img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1rem;
+  display: inline;
+  background-color: b.$primary;
+  padding: 0.5rem 1rem;
+  margin: 20px 0 20px;
+  border-radius: 5px;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 40px;
+  }
+
+  figcaption {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+article {
+  margin-bottom: 15px;
+  h1 {
+    font-size: 1.3rem;
+    margin: 15px 0;
+
+    &:hover {
+      color: b.$primary;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    display: inline-block;
+    color: hsl(0, 0%, 50%);
+    font-size: 1em;
+
+    line-height: 1.7;
+  }
+}
