@@ -32,9 +32,15 @@ dd {
   margin: 0;
 }
 
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
 body {
   background-color: b.$primary;
-  max-height: 100vh;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -49,7 +55,6 @@ section {
   display: flex;
   flex-direction: column;
   width: min(100%, 380px);
-  height: auto;
   border-radius: 20px;
   padding: 30px;
   margin: 1.4rem;
