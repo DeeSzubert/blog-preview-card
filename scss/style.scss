@@ -32,7 +32,7 @@ body {
   font-weight: 500;
 }
 
-section {
+.blog-post {
   @include a.neutrals(100%);
   border: 1px solid black;
   display: flex;
@@ -50,55 +50,59 @@ section {
     text-align: center;
   }
 
-  h2 {
-    font-size: 1rem;
+  &-body {
+    @include a.neutrals(100%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
 
-    background-color: b.$primary;
-    padding: 0.5rem 1rem;
+    &-category {
+      font-size: 1rem;
+      background-color: b.$primary;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      margin: 0.7rem 0;
+    }
 
-    border-radius: 5px;
-  }
+    &-main {
+      margin-bottom: 15px;
 
-  p {
-    margin: 0;
-    padding: 0;
-  }
-}
+      h1 {
+        font-size: 1.3rem;
+        margin: 15px 0;
 
-figure {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 0;
-  margin: 0;
+        &:hover {
+          color: b.$primary;
+          cursor: pointer;
+        }
+      }
 
-  img {
-    width: 40px;
-  }
-
-  figcaption {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-}
-
-article {
-  margin-bottom: 15px;
-  h1 {
-    font-size: 1.3rem;
-    margin: 15px 0;
-
-    &:hover {
-      color: b.$primary;
-      cursor: pointer;
+      &-text {
+        margin: 0;
+        padding: 0;
+        max-width: 336px;
+        color: hsl(0, 0%, 50%);
+        font-size: 1em;
+        line-height: 1.6;
+      }
     }
   }
 
-  p {
-    max-width: 336px;
-    color: hsl(0, 0%, 50%);
-    font-size: 1em;
+  &-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
 
-    line-height: 1.6;
+    img {
+      width: 40px;
+    }
+
+    figcaption {
+      font-size: 1rem;
+      font-weight: bold;
+    }
   }
 }
